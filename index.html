@@ -187,7 +187,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:55px}
 <div class="card">
   <h3>Before you submit</h3>
   <ul>
-    <li>Answer all 30 questions.</li>
+    <li>Answer all 29 questions.</li>
     <li>Select one answer for each item.</li>
     <li>Review your selections before submitting.</li>
     <li>Your score and answer key will not be shown after submission.</li>
@@ -316,28 +316,14 @@ submit.onclick=async()=>{
   try{
     if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.includes('PASTE_YOUR')) throw new Error('Apps Script URL has not been configured.');
 
-    const response = await fetch(APPS_SCRIPT_URL,{
+    // Apps Script Web Apps are most reliable here with no-cors.
+    // The browser does not need to read the response; Apps Script records it server-side.
+    await fetch(APPS_SCRIPT_URL,{
       method:'POST',
-      mode:'cors',
+      mode:'no-cors',
       headers:{'Content-Type':'text/plain;charset=utf-8'},
       body:JSON.stringify(payload)
     });
-
-    let result = null;
-    try { result = await response.json(); } catch(e) {}
-
-    if(result && result.ok === false && result.code === 'ALREADY_SUBMITTED'){
-      submit.disabled=false;
-      submit.textContent='Submit Assessment';
-      status.className='submit-status error';
-      status.innerHTML='<strong>Response already recorded.</strong><br>This email address has already submitted this assessment. Only one submission is allowed.';
-      status.scrollIntoView({behavior:'smooth',block:'center'});
-      return;
-    }
-
-    if(!response.ok || (result && result.ok === false)){
-      throw new Error((result && result.error) || 'Submission failed.');
-    }
 
     // Deliberately do not calculate or display the learner's score.
     form.querySelectorAll('.assessment-option').forEach(b=>b.disabled=true);
