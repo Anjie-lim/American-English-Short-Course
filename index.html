@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>American English Standards Training</title>
+<style>
+:root{--bg:#f5f7fb;--surface:#fff;--text:#182230;--muted:#687386;--line:#dfe4ec;--accent:#3157d5;--accent2:#2445b3;--soft:#e9edff;--ok:#237a4b;--okbg:#e8f6ee;--bad:#b23a48;--badbg:#fdecef;--shadow:0 10px 30px rgba(20,30,50,.08);--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button{font:inherit}.top{height:68px;position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px}
+.brand{font-weight:800}.brand b{color:var(--accent)}.progress{display:flex;align-items:center;gap:10px;width:300px}.track{height:8px;flex:1;background:#e7eaf0;border-radius:99px;overflow:hidden}.bar{height:100%;width:0;background:var(--accent);transition:.3s}.plabel{font-size:13px;color:var(--muted);white-space:nowrap}
+.layout{display:grid;grid-template-columns:270px 1fr;max-width:1450px;margin:auto}.side{position:sticky;top:68px;height:calc(100vh - 68px);overflow:auto;background:#fff;border-right:1px solid var(--line);padding:25px 16px}.side-title{text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--muted);padding:0 12px 12px}
+.navbtn{width:100%;border:0;background:transparent;text-align:left;padding:12px;border-radius:12px;cursor:pointer;display:flex;gap:10px;margin:3px 0}.navbtn:hover{background:#f1f3f7}.navbtn.active{background:var(--soft);color:var(--accent2);font-weight:750}.num{min-width:24px;font-size:12px;color:var(--muted);font-weight:800}.active .num{color:var(--accent)}
+main{padding:48px 55px 80px}.content{max-width:920px;margin:auto}.module{display:none}.module.active{display:block}
+.hero{background:linear-gradient(135deg,#182b68,#3157d5 65%,#5574df);color:#fff;padding:44px;border-radius:24px;box-shadow:var(--shadow);margin-bottom:30px}.eyebrow{text-transform:uppercase;letter-spacing:.1em;font-size:12px;font-weight:800;opacity:.82}.hero h1{font-size:clamp(34px,5vw,52px);line-height:1.05;letter-spacing:-.04em;margin:10px 0 16px}.lead{font-size:19px;max-width:740px;color:#eef2ff}
+h2{font-size:29px;line-height:1.2;letter-spacing:-.025em;margin:44px 0 14px}h3{font-size:20px;margin:26px 0 9px}p{margin:0 0 16px}
+.card,.quiz{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:18px 0;box-shadow:0 4px 15px rgba(20,30,50,.035)}
+.callout{background:var(--soft);border-left:4px solid var(--accent);padding:18px 20px;border-radius:0 14px 14px 0;margin:20px 0}.tip{background:var(--okbg);border-left-color:var(--ok)}.warn{background:var(--badbg);border-left-color:var(--bad)}
+.quote{background:#fafbfc;border:1px solid var(--line);border-radius:13px;padding:16px 19px;margin:13px 0;font-size:18px}
+.columns{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);margin:18px 0}th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left}th{background:#f5f7fa;font-size:13px}tr:last-child td{border-bottom:0}
+li{margin:6px 0}.quiz-q{font-weight:750;margin-bottom:14px}.option{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:12px 14px;margin:8px 0;cursor:pointer}.option:hover{background:#fafbfe;border-color:#aeb9ca}.option.correct{background:var(--okbg);border-color:#68ad84}.option.wrong{background:var(--badbg);border-color:#d57b87}.feedback{font-size:14px;font-weight:700;margin-top:12px}
+.nav{display:flex;justify-content:space-between;margin-top:40px;gap:12px}.btn{border:1px solid var(--line);background:#fff;padding:11px 17px;border-radius:11px;font-weight:750;cursor:pointer}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn:disabled{opacity:.45;cursor:not-allowed}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:55px}
+@media(max-width:850px){.layout{display:block}.side{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}.side-list{display:flex;overflow:auto}.navbtn{min-width:190px}.top{padding:0 15px}.progress{width:190px}main{padding:30px 18px 60px}.columns{grid-template-columns:1fr}}
+@media(max-width:520px){.brand{font-size:14px}.plabel{display:none}.hero{padding:30px 23px}.hero h1{font-size:34px}h2{font-size:25px}}
+.assessment{display:none}.assessment.active{display:block}.assessment-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0}.assessment-item h3{margin-top:0;font-size:17px}.assessment-option{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:12px 14px;margin:8px 0;cursor:pointer}.assessment-option:hover{background:#fafbfe}.assessment-option.selected{border-color:var(--accent);background:var(--soft)}#submitAssessment{margin-top:22px}.learner-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field label{display:block;font-weight:750;font-size:14px;margin-bottom:6px}.field input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff}.field input:focus{outline:2px solid var(--soft);border-color:var(--accent)}.required-note{font-size:13px;color:var(--muted)}.submit-status{margin-top:18px;padding:16px 18px;border-radius:12px;display:none}.submit-status.success{display:block;background:var(--okbg);border:1px solid #a6d5b9;color:#185b38}.submit-status.error{display:block;background:var(--badbg);border:1px solid #e0a1aa;color:#8f2938}@media(max-width:700px){.learner-fields{grid-template-columns:1fr}}</style>
+
+<style id="password-gate-style">
+#passwordGate{position:fixed;inset:0;z-index:99999;background:#f5f7fb;display:flex;align-items:center;justify-content:center;padding:24px}
+#passwordGate .gate-card{width:min(430px,100%);background:#fff;border:1px solid #dfe4ec;border-radius:20px;padding:34px;box-shadow:0 20px 60px rgba(20,30,50,.12);text-align:center}
+#passwordGate h1{font-size:28px;line-height:1.15;margin:0 0 10px;color:#182230}
+#passwordGate p{color:#687386;margin:0 0 22px;line-height:1.55}
+#passwordGate input{width:100%;padding:13px 14px;border:1px solid #dfe4ec;border-radius:10px;font:inherit;box-sizing:border-box}
+#passwordGate input:focus{outline:2px solid #e9edff;border-color:#3157d5}
+#passwordGate button{width:100%;margin-top:12px;padding:12px 16px;border:1px solid #3157d5;background:#3157d5;color:#fff;border-radius:10px;font:inherit;font-weight:750;cursor:pointer}
+#passwordGate button:hover{background:#2445b3}
+#passwordError{display:none;color:#b23a48;font-size:14px;font-weight:700;margin-top:12px}
+#courseContent{display:none}
+</style>
+
+</head>
+<body>
+<div id="passwordGate">
+  <div class="gate-card">
+    <h1>American English Standards</h1>
+    <p>Enter the course password to continue.</p>
+    <form id="passwordForm">
+      <input id="coursePassword" type="password" autocomplete="off" placeholder="Enter password" aria-label="Course password">
+      <button type="submit">Access Course</button>
+      <div id="passwordError">Incorrect password. Please try again.</div>
+    </form>
+  </div>
+</div>
+
+<div id="courseContent">
+
+<header class="top">
+  <div class="brand">American English <b>Standards</b></div>
+  <div class="progress"><div class="track"><div id="bar" class="bar"></div></div><span id="plabel" class="plabel">Module 1 of 6</span></div>
+</header>
+
+<div class="layout">
+<aside class="side">
+  <div class="side-title">Course modules</div>
+  <div class="side-list">
+    <button class="navbtn active" data-module="1"><span class="num">01</span>Grammar &amp; Syntax</button>
+    <button class="navbtn" data-module="2"><span class="num">02</span>Vocabulary &amp; Lexical Choices</button>
+    <button class="navbtn" data-module="3"><span class="num">03</span>Spelling Conventions</button>
+    <button class="navbtn" data-module="4"><span class="num">04</span>Punctuation &amp; Formatting</button>
+    <button class="navbtn" data-module="5"><span class="num">05</span>Cultural Context &amp; Awareness</button>
+    <button class="navbtn" data-module="6"><span class="num">06</span>Idioms &amp; Slang</button>
+    <button class="navbtn" data-module="7"><span class="num">07</span>Final Assessment</button>
+  </div>
+</aside>
+
+<main><div class="content">
+
+<section class="module active" id="m1">
+<div class="hero"><div class="eyebrow">Module 1</div><h1>American English Grammar &amp; Syntax</h1><p class="lead">Recognize the grammar and sentence patterns used in American English, with particular attention to the conventions covered in this training.</p></div><div class="card"><h3>Why this matters for annotation</h3><p>Grammar errors can change tense, agreement, or the relationship between parts of a sentence. Your task is to recognize the American English form required by the task, rather than simply deciding whether another form could also work.</p><p>Pay particular attention to tense choice, time prepositions, collective nouns, and American verb forms.</p></div><h2>Start With Sentence Structure</h2><p>Identify the subject, verb, and time or context of the action. Then check whether the form matches the intended meaning.</p><div class="columns"><div class="card"><strong>Completed action</strong><p>We finished the review yesterday.</p></div><div class="card"><strong>Present relevance</strong><p>We have finished the review.</p></div></div><div class="callout tip"><strong>Review habit:</strong> Do not change a sentence simply because another form exists. First identify the convention the task requires.</div><h2>Other Grammar Checks</h2><div class="card"><h3>Subject–verb agreement</h3><p>The verb should agree with the grammatical subject: <strong>The report is ready.</strong> / <strong>The reports are ready.</strong></p><h3>Complete sentences</h3><p>A complete sentence needs a subject and a verb that form a complete thought. A fragment such as <em>“After the meeting”</em> does not.</p><h3>Run-on sentences</h3><p>A long sentence is not automatically a run-on. A run-on occurs when complete clauses are improperly connected.</p></div>
+<div class="card"><h3>What you'll learn</h3><ul><li>Past Simple and Present Perfect.</li><li>Common time prepositions.</li><li>Collective nouns treated as singular for this project.</li><li><em>Got</em> and <em>gotten</em>.</li><li>Common American and British verb-form differences.</li></ul></div>
+
+<h2>Past Simple and Present Perfect</h2>
+<p>The <strong>Past Simple</strong> describes a completed action, often with a definite or understood time reference.</p>
+<div class="columns"><div class="card"><strong>Past Simple</strong><p>I finished the report yesterday.</p><p>She called the client this morning.</p></div><div class="card"><strong>Present Perfect</strong><p>I have finished the report.</p><p>She has called the client.</p></div></div>
+<div class="callout"><strong>Project convention:</strong> The reference notes that American English commonly prefers the Past Simple in some contexts involving recently completed actions.</div>
+<div class="quiz" data-answer="0"><div class="quiz-q">Which sentence follows the convention taught in this lesson?</div><button class="option">I just completed the training.</button><button class="option">I have just completed the training.</button><button class="option">I have just complete the training.</button><button class="option">I just have completed the training yesterday.</button><div class="feedback"></div></div>
+
+<h2>Prepositions in Time Expressions</h2>
+<table><tr><th>Preposition</th><th>Typical use</th><th>Example</th></tr><tr><td><strong>at</strong></td><td>Specific time</td><td>at 9:00 a.m.</td></tr><tr><td><strong>on</strong></td><td>Day or date</td><td>on Monday</td></tr><tr><td><strong>in</strong></td><td>Month, year, season</td><td>in September</td></tr></table>
+<div class="callout"><strong>Project convention:</strong> Use <strong>on the weekend</strong>.</div>
+
+<h2>Collective Nouns</h2><p>Words such as <strong>team, company, committee, family, staff</strong>, and <strong>government</strong> refer to groups.</p><div class="quote">The marketing team <strong>is</strong> reviewing the campaign.</div><p>For this training, follow the project reference convention of treating collective nouns as singular.</p>
+
+<h2>Got and Gotten</h2><p><strong>Got</strong> is the past form. <strong>Gotten</strong> is used as a past participle in the American construction taught in this module.</p><div class="columns"><div class="quote">He <strong>got</strong> more confident.</div><div class="quote">He has <strong>gotten</strong> more confident.</div></div>
+
+<h2>American and British Verb Forms</h2><table><tr><th>American English</th><th>British English</th></tr><tr><td>burned</td><td>burnt</td></tr><tr><td>learned</td><td>learnt</td></tr><tr><td>dreamed</td><td>dreamt</td></tr></table>
+<div class="quiz" data-answer="0"><div class="quiz-q">Which sentence uses the American English form taught here?</div><button class="option">The students learned a lot from the workshop.</button><button class="option">The students learnt a lot from the workshop.</button><button class="option">The students learn a lot yesterday.</button><button class="option">The students had learn a lot from the workshop.</button><div class="feedback"></div></div>
+<div class="card"><h3>Quick review</h3><ul><li>Check whether a completed action calls for the Past Simple under the project convention.</li><li>Use <strong>on</strong> with days and with <strong>the weekend</strong>.</li><li>Treat collective nouns as singular for this training.</li><li>Recognize <strong>gotten</strong> as the American past participle in the specified construction.</li><li>Watch for American/British verb-form differences.</li></ul></div>
+</section>
+
+<section class="module" id="m2">
+<div class="hero"><div class="eyebrow">Module 2</div><h1>American English Vocabulary &amp; Lexical Choices</h1><p class="lead">Recognize common American English vocabulary when the same object, activity, or concept has a different term in British English.</p></div><div class="card"><h3>Why vocabulary choice matters</h3><p>American and British English can use different words for the same object or concept. For annotation, the key distinction is often regional vocabulary, not whether one term is inherently correct.</p><p>Identify the object or concept first, then select the American English term.</p></div><h2>Recognize the Category First</h2><div class="columns"><div class="card"><strong>Food</strong><p>cookie ↔ biscuit</p><p>fries ↔ chips</p></div><div class="card"><strong>Transportation</strong><p>elevator ↔ lift</p><p>parking lot ↔ car park</p></div><div class="card"><strong>Clothing</strong><p>sweater ↔ jumper</p><p>pants ↔ trousers</p></div><div class="card"><strong>Household</strong><p>apartment ↔ flat</p><p>faucet ↔ tap</p></div></div><h2>Context Prevents Misinterpretation</h2><div class="quote">“She left her pants in the bedroom.”</div><p>In the American vocabulary convention used here, <strong>pants</strong> refers to trousers. Use the surrounding sentence to confirm what the word means.</p><div class="callout tip"><strong>Annotation strategy:</strong> Identify the concept first. Then retrieve the American English term for that concept.</div>
+<div class="callout">When the task targets American English, identify the American term. A British term is not meaningless simply because it is not the target variety.</div>
+<h2>Food and Drink</h2><table><tr><th>American English</th><th>British English</th></tr><tr><td>cookie</td><td>biscuit</td></tr><tr><td>fries</td><td>chips</td></tr><tr><td>candy</td><td>sweets</td></tr></table>
+<h2>Transportation</h2><table><tr><th>American English</th><th>British English</th></tr><tr><td>elevator</td><td>lift</td></tr><tr><td>subway</td><td>underground</td></tr><tr><td>parking lot</td><td>car park</td></tr></table>
+<h2>Clothing</h2><table><tr><th>American English</th><th>British English</th></tr><tr><td>sweater</td><td>jumper</td></tr><tr><td>pants</td><td>trousers</td></tr><tr><td>sneakers</td><td>trainers</td></tr></table>
+<h2>Household Vocabulary</h2><table><tr><th>American English</th><th>British English</th></tr><tr><td>apartment</td><td>flat</td></tr><tr><td>faucet</td><td>tap</td></tr><tr><td>diaper</td><td>nappy</td></tr></table>
+<h2>Academic and Business Vocabulary</h2><table><tr><th>Category</th><th>American</th><th>British</th></tr><tr><td>Academic</td><td>vacation</td><td>holiday</td></tr><tr><td>Academic</td><td>grades</td><td>marks</td></tr><tr><td>Academic</td><td>principal</td><td>headteacher</td></tr><tr><td>Business</td><td>check</td><td>cheque</td></tr><tr><td>Business</td><td>resume</td><td>CV</td></tr><tr><td>Business</td><td>layoffs</td><td>redundancies</td></tr></table>
+<h2>Entertainment Vocabulary</h2><table><tr><th>American English</th><th>British English</th></tr><tr><td>movie</td><td>film</td></tr><tr><td>TV show</td><td>programme</td></tr><tr><td>commercial</td><td>advert</td></tr></table>
+<h2>Practice</h2>
+<div class="quiz" data-answer="2"><div class="quiz-q">Which American English word corresponds to the British term <strong>“jumper”</strong>?</div><button class="option">Jacket</button><button class="option">Vest</button><button class="option">Sweater</button><button class="option">Coat</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="1"><div class="quiz-q">Which American English term corresponds to <strong>“underground”</strong> for urban rail transportation?</div><button class="option">Freeway</button><button class="option">Subway</button><button class="option">Highway</button><button class="option">Turnpike</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="0"><div class="quiz-q">A British speaker refers to a <strong>“flat.”</strong> Which American English term means the same thing?</div><button class="option">Apartment</button><button class="option">Dormitory</button><button class="option">Townhouse</button><button class="option">Basement</button><div class="feedback"></div></div>
+</section>
+
+<section class="module" id="m3">
+<div class="hero"><div class="eyebrow">Module 3</div><h1>American English Spelling Conventions</h1><p class="lead">Identify common American English spelling patterns and distinguish them from British English forms.</p></div><div class="card"><h3>Why spelling patterns matter</h3><p>American and British English often spell the same word differently. Many differences are systematic, so recognizing the pattern is faster than treating every word as an isolated exception.</p></div><h2>Pattern Recognition</h2><div class="columns"><div class="card"><strong>-our → -or</strong><p>honour → honor</p><p>flavour → flavor</p></div><div class="card"><strong>-re → -er</strong><p>centre → center</p><p>theatre → theater</p></div><div class="card"><strong>-ise → -ize</strong><p>organise → organize</p><p>realise → realize</p></div><div class="card"><strong>-ce → -se</strong><p>defence → defense</p><p>offence → offense</p></div></div><h2>Other Patterns</h2><p>The reference also includes vowel combinations, final <em>e</em>, doubled consonants, <em>-wards/-ward</em>, <em>cheque/check</em>, and <em>-ogue/-og</em>.</p><div class="quote"><strong>catalog</strong> / catalogue &nbsp; · &nbsp; <strong>dialog</strong> / dialogue</div><div class="callout tip"><strong>Consistency matters:</strong> When the task requires American English, use American spelling consistently throughout the response.</div>
+<div class="callout">The goal is pattern recognition. When the task requires American English, select or produce the American spelling consistently.</div>
+<h2>-our → -or</h2><table><tr><th>American</th><th>British</th></tr><tr><td>color</td><td>colour</td></tr><tr><td>flavor</td><td>flavour</td></tr><tr><td>honor</td><td>honour</td></tr><tr><td>favor</td><td>favour</td></tr><tr><td>rumor</td><td>rumour</td></tr><tr><td>splendor</td><td>splendour</td></tr></table>
+<h2>-re → -er</h2><table><tr><th>American</th><th>British</th></tr><tr><td>center</td><td>centre</td></tr><tr><td>theater</td><td>theatre</td></tr><tr><td>liter</td><td>litre</td></tr></table>
+<h2>-ise → -ize</h2><table><tr><th>American</th><th>British</th></tr><tr><td>organize</td><td>organise</td></tr><tr><td>realize</td><td>realise</td></tr><tr><td>criticize</td><td>criticise</td></tr><tr><td>emphasize</td><td>emphasise</td></tr><tr><td>categorize</td><td>categorise</td></tr></table>
+<h2>Single and Double Consonants</h2><table><tr><th>American</th><th>British</th></tr><tr><td>traveled</td><td>travelled</td></tr><tr><td>traveling</td><td>travelling</td></tr><tr><td>canceled</td><td>cancelled</td></tr></table>
+<h2>-ce → -se</h2><table><tr><th>American</th><th>British</th></tr><tr><td>defense</td><td>defence</td></tr><tr><td>offense</td><td>offence</td></tr><tr><td>license</td><td>licence</td></tr></table>
+<h2>Other Patterns</h2><table><tr><th>American</th><th>British</th></tr><tr><td>eon</td><td>aeon</td></tr><tr><td>esthetic</td><td>aesthetic</td></tr><tr><td>diarrhea</td><td>diarrhoea</td></tr><tr><td>maneuver</td><td>manoeuvre</td></tr><tr><td>annex</td><td>annexe</td></tr><tr><td>gram</td><td>gramme</td></tr><tr><td>check</td><td>cheque</td></tr><tr><td>toward</td><td>towards</td></tr><tr><td>afterward</td><td>afterwards</td></tr><tr><td>catalog</td><td>catalogue</td></tr><tr><td>dialog</td><td>dialogue</td></tr></table>
+<div class="quiz" data-answer="0"><div class="quiz-q">Which spelling follows the American English pattern?</div><button class="option">Theater</button><button class="option">Theatre</button><button class="option">Theatreh</button><button class="option">Theatar</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="0"><div class="quiz-q">Which word uses the American English <strong>-ize</strong> pattern?</div><button class="option">Recognize</button><button class="option">Recognise</button><button class="option">Recognice</button><button class="option">Recognizee</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="2"><div class="quiz-q">Which spelling is the American English form?</div><button class="option">Cancelled</button><button class="option">Canceld</button><button class="option">Canceled</button><button class="option">Cancelld</button><div class="feedback"></div></div>
+</section>
+
+<section class="module" id="m4">
+<div class="hero"><div class="eyebrow">Module 4</div><h1>American English Punctuation &amp; Formatting</h1><p class="lead">Apply quotation, date, and title-formatting conventions used in American English.</p></div><div class="card"><h3>Why formatting matters</h3><p>Punctuation shows where quotations end, clarifies sentence structure, and makes dates and titles easier to interpret.</p></div><h2>Direct Quote Checklist</h2><ol><li>Use double quotation marks.</li><li>Capitalize a complete quoted sentence.</li><li>Use a comma to introduce a quotation after an appropriate introductory clause or dialogue tag.</li><li>Check where the ending punctuation belongs.</li></ol><div class="quote">Maria said, “The project is complete.”</div><div class="quote">“The project is complete,” Maria said.</div><h2>Different Punctuation, Different Rules</h2><p>For the convention taught here, periods and commas go inside quotation marks. The reference also notes that colons and semicolons go outside, while question marks and exclamation points depend on whether they belong to the quote or the surrounding sentence.</p><table><tr><th>Situation</th><th>Example</th></tr><tr><td>Question belongs to quote</td><td>She asked, “Are you ready?”</td></tr><tr><td>Question belongs to whole sentence</td><td>Who said, “Give me liberty or give me death”?</td></tr><tr><td>Colon outside</td><td>He called it “unexpected”:</td></tr></table><h2>Dates and Titles</h2><p>Numeric American dates follow <strong>Month/Day/Year</strong>. In titles, capitalize major words while keeping shorter articles and prepositions lowercase unless they begin the title.</p>
+<h2>Quotation Marks</h2><p>American English typically uses <strong>double quotation marks</strong> for direct quotations.</p><div class="quote">She said, <strong>“The meeting starts at nine.”</strong></div>
+<h2>Periods and Commas With Quotation Marks</h2><p>In the American English convention taught here, periods and commas go <strong>inside</strong> quotation marks.</p><div class="columns"><div class="card"><strong>Correct</strong><p>She said, “I'll call you later.”</p></div><div class="card"><strong>Correct</strong><p>He described it as “unexpected.”</p></div></div>
+<div class="callout tip"><strong>Remember:</strong> Check the placement of periods and commas relative to the closing quotation mark.</div>
+<h2>Dates</h2><p>American English commonly uses the <strong>Month/Day/Year</strong> order in numeric dates.</p><div class="quote"><strong>09/23/2024</strong></div><p>Keep the format consistent within the same piece of communication.</p>
+<h2>Title Capitalization</h2><p>Capitalize major words in a title. Articles and prepositions are generally lowercase unless they begin the title.</p><div class="quote">The Lord of the Rings</div>
+<div class="quiz" data-answer="0"><div class="quiz-q">Which sentence follows the quotation-mark convention taught here?</div><button class="option">He said, “The report is ready.”</button><button class="option">He said, “The report is ready”.</button><button class="option">He said, 'The report is ready.'</button><button class="option">He said “The report is ready”.</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="2"><div class="quiz-q">Which date follows the American numeric format?</div><button class="option">23/09/2024</button><button class="option">2024/09/23</button><button class="option">09/23/2024</button><button class="option">23-09-2024</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="1"><div class="quiz-q">Which title follows the capitalization convention taught here?</div><button class="option">The Lord Of The Rings</button><button class="option">The Lord of the Rings</button><button class="option">the Lord of the Rings</button><button class="option">The lord Of the rings</button><div class="feedback"></div></div>
+</section>
+
+<section class="module" id="m5">
+<div class="hero"><div class="eyebrow">Module 5</div><h1>American Cultural Context &amp; Awareness</h1><p class="lead">Recognize common American cultural references, holidays, idiomatic expressions, and everyday social conventions.</p></div><div class="card"><h3>Why cultural context matters</h3><p>Words and expressions are not always interpreted literally. Cultural awareness helps you recognize references that are familiar within American contexts and understand how they function in everyday communication.</p></div><h2>Literal Meaning vs. Cultural Meaning</h2><div class="columns"><div class="card"><strong>Literal</strong><p>“Spill the beans” could describe dropping beans.</p></div><div class="card"><strong>Contextual</strong><p>In common usage, it means to reveal a secret.</p></div></div><h2>Holiday References</h2><div class="card"><h3>Independence Day</h3><p>July 4 is associated with Independence Day and commonly with patriotic displays, fireworks, and outdoor gatherings.</p><h3>Halloween</h3><p>Halloween is observed on October 31.</p></div><h2>Social Questions and Their Function</h2><p>Short questions can function as conversational greetings rather than requests for detailed information. The intended response depends on the setting.</p><div class="callout tip"><strong>Context clue:</strong> Ask what the speaker is trying to accomplish socially. A greeting may function as a greeting even when its literal wording appears to request information.</div><h2>Sports as Cultural References</h2><p>American English content may refer to basketball, baseball, and American football, as well as major events such as the World Series or NBA Finals.</p>
+<h2>Everyday Expressions</h2><table><tr><th>Expression</th><th>Meaning</th></tr><tr><td>spill the beans</td><td>Reveal a secret</td></tr><tr><td>under the weather</td><td>Feeling ill</td></tr><tr><td>the whole nine yards</td><td>The complete amount or everything</td></tr></table>
+<h2>Social and Business Etiquette</h2><p>The reference emphasizes clear, concise communication and directness in American business contexts.</p><p>A brief question such as <strong>“How's it going?”</strong> may function as a polite social greeting rather than an invitation to provide a detailed account.</p>
+<div class="callout">Interpret a cultural interaction according to its <strong>social function</strong>, not only its literal wording.</div>
+<h2>American Holidays</h2><table><tr><th>Holiday</th><th>Common date or timing</th></tr><tr><td>Halloween</td><td>October 31</td></tr><tr><td>Labor Day</td><td>September</td></tr><tr><td>President's Day</td><td>February</td></tr><tr><td>Independence Day</td><td>July 4</td></tr></table>
+<h2>Sports and Popular Culture</h2><p>Common American sports references include basketball, baseball, and American football. Major references can include the World Series and NBA Finals.</p>
+<div class="quiz" data-answer="1"><div class="quiz-q">Someone says, “I've been feeling under the weather.” What does the expression communicate?</div><button class="option">They have been outside in bad weather.</button><button class="option">They are feeling ill.</button><button class="option">They are traveling.</button><button class="option">They are feeling excited.</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="3"><div class="quiz-q">Which holiday is associated with October 31?</div><button class="option">Labor Day</button><button class="option">President's Day</button><button class="option">Independence Day</button><button class="option">Halloween</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="0"><div class="quiz-q">A coworker asks, “How's it going?” in a casual workplace conversation. What is the most appropriate interpretation?</div><button class="option">It can function as a brief social greeting.</button><button class="option">The coworker is requesting a detailed report.</button><button class="option">The coworker is asking for a performance review.</button><button class="option">The coworker is asking for a written response.</button><div class="feedback"></div></div>
+</section>
+
+<section class="module" id="m6">
+<div class="hero"><div class="eyebrow">Module 6</div><h1>American Idioms &amp; Slang</h1><p class="lead">Interpret nonliteral expressions and informal language by using context rather than taking every phrase literally.</p></div><div class="card"><h3>Why idiom recognition matters</h3><p>Idioms and slang can cause errors when a phrase is interpreted word by word. In annotation, identify the intended meaning supported by context.</p></div><h2>Common Idiom Types</h2><div class="columns"><div class="card"><strong>Action-oriented</strong><p>break the ice</p><p>beat the clock</p><p>call it a day</p></div><div class="card"><strong>State-oriented</strong><p>on the fence</p><p>tough nut to crack</p></div></div><h2>Use the Surrounding Sentence</h2><div class="quote">“We only have five minutes left. Let's beat the clock and finish the report.”</div><p>The phrase refers to completing the task before time runs out.</p><h2>Idioms vs. Slang</h2><p>An idiom has an established nonliteral meaning. Slang is informal vocabulary or phrasing associated with particular social contexts. They can overlap, but they are not identical categories.</p><h2>When Direct Language Is Better</h2><div class="columns"><div class="card"><strong>Clear</strong><p>The task is difficult.</p></div><div class="card"><strong>Idiomatic</strong><p>It's a tough nut to crack.</p></div></div><div class="callout tip"><strong>Best practice:</strong> Learn to recognize idioms even when you should avoid introducing them in your own annotation writing.</div>
+<div class="callout warn"><strong>Annotation principle:</strong> Idioms can be useful for understanding meaning, but avoid unnecessary idiomatic language when writing AI-training responses because literal interpretation can cause confusion.</div>
+<h2>What Is an Idiom?</h2><p>An idiom is a group of words whose intended meaning cannot always be determined by interpreting each word literally.</p><div class="quote">“Let's break the ice.”</div><p>This normally means <strong>starting a conversation or helping people become more comfortable</strong>, not physically breaking ice.</p>
+<h2>Common Expressions</h2><table><tr><th>Expression</th><th>Intended meaning</th></tr><tr><td>break the ice</td><td>Initiate conversation or reduce social tension</td></tr><tr><td>tough nut to crack</td><td>A difficult problem or person to understand</td></tr><tr><td>beat the clock</td><td>Finish before time runs out</td></tr><tr><td>on the fence</td><td>Undecided</td></tr><tr><td>call it a day</td><td>Stop working for the day</td></tr></table>
+<h2>Slang and Informal Language</h2><p>Slang is informal language associated with particular social or conversational contexts.</p><p><strong>Cool</strong> can be used informally to mean something is great, impressive, or acceptable depending on context.</p><div class="quote">“That's a cool idea.”</div>
+<h2>Use Context Clues</h2><div class="card"><p>“The deadline is in ten minutes, but we still have three pages to finish. We need to beat the clock.”</p><p><strong>Meaning:</strong> They need to finish before the available time runs out.</p></div>
+<h2>Literal vs. Intended Meaning</h2><div class="columns"><div class="card"><strong>Literal reading</strong><p>“Call it a day” sounds like naming a day.</p></div><div class="card"><strong>Contextual reading</strong><p>In workplace conversation, it can mean stopping work for the day.</p></div></div>
+<h2>When Writing for AI Training</h2><p>Direct language is often easier to interpret than excessive idiomatic language.</p><div class="columns"><div class="card"><strong>Direct</strong><p>Stop working for today.</p></div><div class="card"><strong>Idiomatic</strong><p>Let's call it a day.</p></div></div>
+<div class="quiz" data-answer="2"><div class="quiz-q">A manager says, “Let's break the ice before we begin the discussion.” What does the manager mean?</div><button class="option">Start by breaking something.</button><button class="option">End the discussion immediately.</button><button class="option">Begin with an activity that helps people become comfortable.</button><button class="option">Delay the discussion until winter.</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="0"><div class="quiz-q">A colleague says, “I'm on the fence about accepting the offer.” What does this mean?</div><button class="option">The colleague is undecided.</button><button class="option">The colleague is physically sitting outside.</button><button class="option">The colleague has rejected the offer.</button><button class="option">The colleague has already accepted the offer.</button><div class="feedback"></div></div>
+<div class="quiz" data-answer="1"><div class="quiz-q">A team has finished most of its work and someone says, “We can call it a day.” What does this mean?</div><button class="option">Schedule another workday.</button><button class="option">Stop working for the day.</button><button class="option">Name the day on the calendar.</button><button class="option">Start a new task.</button><div class="feedback"></div></div>
+<h2>Interpretation Strategy</h2><ol><li>Identify the unusual expression.</li><li>Ask whether the literal meaning makes sense in context.</li><li>Look for surrounding clues.</li><li>Determine the intended meaning.</li><li>Use direct language when writing an explanation unless the idiom itself is relevant.</li></ol>
+<div class="card"><h3>Final review</h3><p>You should now be able to recognize common American idioms and informal expressions, distinguish literal from intended meaning, and use context to determine what a speaker or writer is communicating.</p></div>
+</section>
+
+
+<section class="assessment" id="assessment">
+<div class="hero"><div class="eyebrow">Final Assessment</div><h1>American English Standards Assessment</h1><p class="lead">Complete the final assessment after finishing Modules 1–6. Your responses will be recorded for training results and review.</p></div>
+
+<div class="card">
+  <h3>Learner information</h3>
+  <p>Enter your details before starting. Your name and email will be submitted with your assessment responses.</p>
+  <div class="learner-fields">
+    <div class="field"><label for="learnerName">Full name *</label><input id="learnerName" type="text" autocomplete="name" required></div>
+    <div class="field"><label for="learnerEmail">Email address *</label><input id="learnerEmail" type="email" autocomplete="email" required></div>
+  </div>
+  <p class="required-note" style="margin-top:10px">All fields are required.</p>
+</div>
+
+<div class="card">
+  <h3>Before you submit</h3>
+  <ul>
+    <li>Answer all 30 questions.</li>
+    <li>Select one answer for each item.</li>
+    <li>Review your selections before submitting.</li>
+    <li>Your score and answer key will not be shown after submission.</li>
+  </ul>
+</div>
+
+<form id="finalAssessment"></form>
+<div id="submitStatus" class="submit-status" aria-live="polite"></div>
+</section>
+
+<div class="nav"><button id="prev" class="btn">← Previous</button><button id="next" class="btn primary">Next module →</button></div>
+<footer>American English Standards Training · Modules 1–6</footer>
+</div></main>
+</div>
+
+<script>
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwioFHEXe-XmQRNINLt0ia4BodWKCdicdGCGttUrPIhnmQfXMyM7mzKj0kssZrlYAmy/exec";
+const pages = [...document.querySelectorAll('.module, .assessment')];
+const nav = [...document.querySelectorAll('.navbtn')];
+let current = Number(localStorage.getItem('americanEnglishModule') || 1);
+if(current < 1 || current > pages.length) current = 1;
+
+function show(n){
+  current = Math.max(1, Math.min(pages.length, n));
+  pages.forEach((p,i)=>p.classList.toggle('active', i===current-1));
+  nav.forEach((b,i)=>b.classList.toggle('active', i===current-1));
+  document.getElementById('bar').style.width = ((current-1)/(pages.length-1)*100)+'%';
+  document.getElementById('plabel').textContent = current === pages.length ? 'Final Assessment' : `Module ${current} of 6`;
+  document.getElementById('prev').disabled = current===1;
+  document.getElementById('next').textContent = current===pages.length ? 'Assessment' : 'Next module →';
+  localStorage.setItem('americanEnglishModule', current);
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+nav.forEach(b=>b.addEventListener('click',()=>show(Number(b.dataset.module))));
+document.getElementById('prev').onclick=()=>show(current-1);
+document.getElementById('next').onclick=()=>show(current+1);
+
+document.querySelectorAll('.quiz').forEach(q=>{
+  const answer=Number(q.dataset.answer), options=[...q.querySelectorAll('.option')], feedback=q.querySelector('.feedback');
+  options.forEach((o,i)=>o.onclick=()=>{
+    options.forEach(x=>x.classList.remove('correct','wrong'));
+    if(i===answer){o.classList.add('correct');feedback.textContent='Correct. Good work.';feedback.style.color='var(--ok)';}
+    else{o.classList.add('wrong');options[answer].classList.add('correct');feedback.textContent='Not quite. Review the highlighted answer.';feedback.style.color='var(--bad)';}
+  });
+});
+
+const assessmentQuestions = [["Grammar & Syntax", "Which sentence correctly uses American English?", ["I've just eaten lunch.", "I just ate lunch.", "I've just ate lunch.", "I have eaten just lunch."], 1], ["Grammar & Syntax", "Which sentence uses the correct American English preposition?", ["I'll visit you at the weekend.", "I'll visit you in the weekend.", "I'll visit you on the weekend.", "I'll visit you during weekend."], 2], ["Grammar & Syntax", "In American English, collective nouns are usually:", ["plural", "singular", "both interchangeably", "only plural with non-human nouns"], 1], ["Grammar & Syntax", "Which sentence is typical of American English?", ["The team are playing tomorrow.", "The team play tomorrow.", "The team is playing tomorrow.", "The teams is playing tomorrow."], 2], ["Grammar & Syntax", "Which sentence uses the American English past participle?", ["I've got better at swimming.", "I've gotten better at swimming.", "I gotten better at swimming.", "I got better at swimming."], 1], ["Vocabulary & Lexical Choices", "What is the American English term for “lift”?", ["elevator", "escalator", "stairwell", "platform"], 0], ["Vocabulary & Lexical Choices", "What is the American English term for “trousers”?", ["jeans", "pants", "shorts", "slacks"], 1], ["Vocabulary & Lexical Choices", "What is the American English term for “sweets”?", ["dessert", "candy", "snacks", "pastries"], 1], ["Vocabulary & Lexical Choices", "What is the American English term for “car park”?", ["parking garage", "parking lot", "driveway", "service station"], 1], ["Vocabulary & Lexical Choices", "What is the American English term for “nappy”?", ["diaper", "bib", "onesie", "stroller"], 0], ["Cultural Context & Awareness", "What does “Don’t spill the beans” mean?", ["Don't waste food.", "Don't reveal a secret.", "Don't make a mess.", "Don't start an argument."], 1], ["Cultural Context & Awareness", "Halloween is observed on:", ["October 1", "October 15", "October 31", "November 1"], 2], ["Cultural Context & Awareness", "What does “under the weather” mean?", ["Feeling sick", "Feeling excited", "Feeling cold outdoors", "Feeling lost"], 0], ["Cultural Context & Awareness", "What does “the whole nine yards” mean?", ["A short distance", "A complete amount or everything", "A sports penalty", "A nine-step process"], 1], ["Cultural Context & Awareness", "Which U.S. holiday is associated with grilling, fireworks, and patriotic displays?", ["Labor Day", "Halloween", "Independence Day", "President's Day"], 2], ["Spelling Conventions", "Which spelling is the American English form?", ["honor", "honour", "honnor", "honourr"], 0], ["Spelling Conventions", "Which spelling is the American English form?", ["centre", "center", "centar", "centrre"], 1], ["Spelling Conventions", "Which spelling is the American English form?", ["travelled", "travelling", "traveled", "travellled"], 2], ["Spelling Conventions", "Which spelling is the American English form?", ["organise", "organize", "organizee", "organice"], 1], ["Spelling Conventions", "Which spelling is the American English form?", ["offence", "offense", "offince", "offensee"], 1], ["Punctuation & Formatting", "Which sentence follows the American English quotation convention?", ["She replied, “I’ll be there soon.”", "She replied, “I’ll be there soon”.", "She replied, 'I’ll be there soon.'", "She replied “I’ll be there soon”."], 0], ["Punctuation & Formatting", "Which date follows the American numeric date format?", ["23/09/2024", "2024/09/23", "09/23/2024", "23-09-2024"], 2], ["Punctuation & Formatting", "Which title follows the capitalization convention taught in the course?", ["The Lord Of The Rings", "The Lord of the Rings", "the Lord of the Rings", "The lord Of the rings"], 1], ["Punctuation & Formatting", "Where does punctuation such as a period or comma normally appear in American English dialogue?", ["Outside the quotation marks", "Inside the quotation marks", "Before the speaker tag only", "It depends only on the length of the quote"], 1], ["Idioms & Slang", "What does “hit the hay” mean?", ["Go to bed", "Start working", "Leave the house", "Get into an argument"], 0], ["Idioms & Slang", "What does “wiped out” mean in informal American English?", ["Very tired", "Very angry", "Very confused", "Very late"], 0], ["Idioms & Slang", "What does “hang in there” mean?", ["Stay patient and keep trying", "Leave immediately", "Stop the activity", "Wait outside"], 0], ["Idioms & Slang", "What does “cut to the chase” mean?", ["Skip unnecessary details and get to the main point", "End a friendship", "Run after someone", "Change the subject completely"], 0], ["Idioms & Slang", "What does “get cold feet” mean?", ["Become nervous or hesitant", "Become physically cold", "Feel sleepy", "Become angry"], 0], ["Idioms & Slang", "What does “break the ice” mean?", ["Make a situation physically colder", "End a conversation", "Initiate or make a conversation more comfortable", "Leave a social situation"], 2]];
+const form = document.getElementById('finalAssessment');
+
+assessmentQuestions.forEach((q,i)=>{
+  const box=document.createElement('div');
+  box.className='assessment-item';
+  box.dataset.questionNumber = i + 1;
+  box.innerHTML='<h3>Question '+(i+1)+'. '+q[1]+'</h3>';
+  q[2].forEach((opt,j)=>{
+    const b=document.createElement('button');
+    b.type='button';
+    b.className='assessment-option';
+    b.textContent=opt;
+    b.setAttribute('aria-pressed','false');
+    b.onclick=()=>{
+      box.querySelectorAll('.assessment-option').forEach(x=>{x.classList.remove('selected');x.setAttribute('aria-pressed','false');});
+      b.classList.add('selected');
+      b.setAttribute('aria-pressed','true');
+      box.dataset.answer=j;
+    };
+    box.appendChild(b);
+  });
+  form.appendChild(box);
+});
+
+const submit=document.createElement('button');
+submit.type='button';
+submit.id='submitAssessment';
+submit.className='btn primary';
+submit.textContent='Submit Assessment';
+form.appendChild(submit);
+
+submit.onclick=async()=>{
+  const name=document.getElementById('learnerName').value.trim();
+  const email=document.getElementById('learnerEmail').value.trim();
+  const status=document.getElementById('submitStatus');
+
+  if(!name || !email){
+    status.className='submit-status error';
+    status.textContent='Please enter your full name and email address before submitting.';
+    document.getElementById('learnerName').focus();
+    return;
+  }
+
+  const answers={};
+  let unanswered=[];
+  assessmentQuestions.forEach((q,i)=>{
+    const box=form.children[i];
+    const selected=Number(box.dataset.answer);
+    const qNumber=i+2;
+    if(Number.isInteger(selected)) answers['Q'+qNumber]=selected;
+    else unanswered.push(i+1);
+  });
+
+  if(unanswered.length){
+    status.className='submit-status error';
+    status.textContent='Please answer every question before submitting. Unanswered: '+unanswered.join(', ')+'.';
+    const first=form.children[unanswered[0]-1];
+    first.scrollIntoView({behavior:'smooth',block:'center'});
+    return;
+  }
+
+  submit.disabled=true;
+  submit.textContent='Submitting...';
+  status.className='submit-status';
+  status.textContent='';
+
+  const payload={
+    action:'submit_assessment',
+    course:'American English Standards Training',
+    assessment:'American English Standards Assessment',
+    assessmentVersion:'v2',
+    name:name,
+    email:email,
+    answers:answers,
+    totalQuestions:assessmentQuestions.length,
+    submittedAt:new Date().toISOString()
+  };
+
+  try{
+    if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.includes('PASTE_YOUR')) throw new Error('Apps Script URL has not been configured.');
+
+    const response = await fetch(APPS_SCRIPT_URL,{
+      method:'POST',
+      mode:'cors',
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body:JSON.stringify(payload)
+    });
+
+    let result = null;
+    try { result = await response.json(); } catch(e) {}
+
+    if(result && result.ok === false && result.code === 'ALREADY_SUBMITTED'){
+      submit.disabled=false;
+      submit.textContent='Submit Assessment';
+      status.className='submit-status error';
+      status.innerHTML='<strong>Response already recorded.</strong><br>This email address has already submitted this assessment. Only one submission is allowed.';
+      status.scrollIntoView({behavior:'smooth',block:'center'});
+      return;
+    }
+
+    if(!response.ok || (result && result.ok === false)){
+      throw new Error((result && result.error) || 'Submission failed.');
+    }
+
+    // Deliberately do not calculate or display the learner's score.
+    form.querySelectorAll('.assessment-option').forEach(b=>b.disabled=true);
+    document.getElementById('learnerName').disabled=true;
+    document.getElementById('learnerEmail').disabled=true;
+    submit.style.display='none';
+
+    status.className='submit-status success';
+    status.innerHTML='<strong>Assessment submitted.</strong><br>Your responses have been recorded. Your score will be reviewed separately.';
+    status.scrollIntoView({behavior:'smooth',block:'center'});
+  }catch(err){
+    submit.disabled=false;
+    submit.textContent='Submit Assessment';
+    status.className='submit-status error';
+    status.textContent='We could not submit the assessment. Please check the Apps Script connection and try again.';
+  }
+};
+show(current);
+</script>
+</div>
+
+<script>
+const COURSE_PASSWORD = 'AmEngSt1';
+const passwordGate = document.getElementById('passwordGate');
+const courseContent = document.getElementById('courseContent');
+const passwordForm = document.getElementById('passwordForm');
+const passwordInput = document.getElementById('coursePassword');
+const passwordError = document.getElementById('passwordError');
+
+// Session-only access: refreshing the page requires the password again.
+passwordForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  if(passwordInput.value === COURSE_PASSWORD){
+    passwordGate.style.display = 'none';
+    courseContent.style.display = 'block';
+    passwordInput.value = '';
+  } else {
+    passwordError.style.display = 'block';
+    passwordInput.value = '';
+    passwordInput.focus();
+  }
+});
+passwordInput.addEventListener('input', function(){
+  passwordError.style.display = 'none';
+});
+</script>
+</body>
+</html>
